@@ -9,13 +9,15 @@
             <input type="password" v-model="formData.password" class="form-control" placeholder="password">
             <br>
             <button class="btn btn-success" @click="signIn">Signin</button>
+            <br>
+            <router-link to="/signup">Sign Up</router-link> 
         </div>
 
     </div>
 </template>
 
 <script>
-
+import firebase from 'firebase/app';
     export default {
         name: 'SignIn',
         data () {
@@ -30,6 +32,7 @@
             signIn(){
                 firebase.auth().signInWithEmailAndPassword(this.formData.email,this.formData.password)
                     .then((user)=>{
+                        console.log(user)
                       this.$router.replace('/hello')
 
                     })
