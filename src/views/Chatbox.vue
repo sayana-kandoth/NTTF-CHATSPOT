@@ -1,8 +1,7 @@
 <template>
 	<div class="container">
 <h3 class=" text-center">NTTF CHATSPOT</h3>
-<div class="messaging">
-      <div class="inbox_msg">
+<div class="messaging">      <div class="inbox_msg">
         <div class="inbox_people">
           <div class="headind_srch">
             <div class="recent_heading">
